@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: quero-pricing
+Version: 0.0.1
+Summary: Pricing Package
+Home-page: https://gitlab.com/queroeducacao-ds/pricing
+Author: Quero Pricing
+Author-email: pricing@quero.com
+License: UNKNOWN
+Description: Pricing Package
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

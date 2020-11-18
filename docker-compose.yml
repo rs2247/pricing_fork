@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  pricing:
+    image: pricing_image
+    container_name: pricing_dev
+    ports:
+      - "8888:8888"
+      - "8050:8050"
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/home/pricing
+      - /var/log:/var/log
+    environment:
+      PRICING_API_HOST: ${PRICING_API_HOST:-http://177.103.230.68:17000/}
+      PRICING_API_USER: ${PRICING_API_USER:-pricing_api_username}
+      PRICING_API_PASSWORD: ${PRICING_API_PASSWORD:-7b4ps434fku4uxxehak5dr3qpe3k8472}
+      PYTHONPATH: /home/pricing/src
+      LOGGER_LEVEL: ${LOGGER_LEVEL:-DEBUG} #DEBUG | INFO
+      LOGGER_FILE: ${LOGGER_FILE:-False}  # if == 'True' logger will output to a file at /var/log/pricing.log
+      DASHBOARD_MODE: ${DASHBOARD_MODE:-DEBUG} # DEBUG | PROD
+      DB_HOST: ${DB_HOST:-pricing.c5rl6dorjml2.us-east-1.rds.amazonaws.com}
+      DB_PORT: ${DB_PORT:-5432}
+      DB_DATABASE: ${DB_DATABASE:-querobolsa_production}
+      DB_USER: ${DB_USER:-dev}
+      DB_PASSWORD: ${DB_PASSWORD:-22f3f9292a1c1f5d3704299608dcf0e0}

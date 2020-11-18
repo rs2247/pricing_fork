@@ -1,0 +1,18 @@
+
+
+
+CREATING A NEW INSTANCE OF LOGGER
+>>>>> Creating Logger <<<<<
+Setting the timezone
+Setting logger at level debug
+Logger outputting to the console
+>>>>> Logger Created <<<<<
+Folder path:  /home/pricing/cache/
+Cache mode!!
+Loading cached file for filename: consolidated_rpu_per_day
+Folder path:  /home/pricing/cache/
+Cache mode!!
+Loading cached file for filename: consolidated_pef_per_day
+Folder path:  /home/pricing/cache/
+Cache mode!!
+No cache for file  city2ies  ... downloading it from db ...
